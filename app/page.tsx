@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Button } from "@/components/ui/button"; // import the cstom component
+import Link from "next/link"; // for client side navigation
 
 export default function LandingPage() {
   return (
@@ -18,6 +18,7 @@ export default function LandingPage() {
           Connect your wallet, check your balance, and request airdrops with ease.
         </p>
 
+        {/* Button to navigate to overview page */}
         <Link href="/overview">
           <Button className="bg-purple-600 hover:bg-purple-700 transition-colors text-lg px-8 py-3">
             Overview
@@ -27,12 +28,14 @@ export default function LandingPage() {
         <br/>
         <br/>
 
+        {/* Button to navigate to wallet page */}
         <Link href="/wallet">
           <Button className="bg-purple-600 hover:bg-purple-700 transition-colors text-lg px-8 py-3">
             Get Started
           </Button>
         </Link>
 
+      {/* Page footer */}
       </motion.div>
       <div className="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
     </div>
