@@ -1,3 +1,5 @@
+// Homepage
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -17,33 +19,25 @@ export default function LandingPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-2xl font-bold">SolanaWallet</h1>
+            <h1 className="text-2xl font-bold">Solana Wallet</h1>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link href="/wallet">
-              <Button
-                variant="outline"
-                className="text-gray-500 border-white hover:bg-white hover:text-black transition-colors"
-              >
-                Launch App
-              </Button>
-            </Link>
           </motion.div>
         </nav>
       </header>
 
-      <main className="relative z-10 container mx-auto py-20 px-4">
+      <main className="relative z-10 container mx-auto py-10 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-2"
         >
-          <h2 className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          <h2 className="text-5xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
             Your Gateway to Solana
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
@@ -58,14 +52,7 @@ export default function LandingPage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex justify-center mb-20"
         >
-          <Link href="/wallet">
-            <Button
-              size="lg"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-full transition-all hover:scale-105"
-            >
-              Get Started <ArrowRight className="ml-2" />
-            </Button>
-          </Link>
+            
         </motion.div>
 
         <motion.div

@@ -14,9 +14,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import Link from "next/link";
 
-export default function Dashboard() {
+export default function Home() {
   const { connection } = useConnection();
   const { publicKey } = useWallet();
   const [balance, setBalance] = useState<number | null>(null);
@@ -67,10 +66,7 @@ export default function Dashboard() {
       <header className="p-6 border-b border-gray-700">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Solana Wallet Interface</h1>
-          <div className="flex items-center space-x-4">
-            {/* This section was replaced */}
-            <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700 transition-colors" />
-          </div>
+          <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700 transition-colors" />
         </div>
       </header>
       <main className="container mx-auto py-12 px-4">
@@ -117,7 +113,6 @@ export default function Dashboard() {
                 <p className="text-gray-400 mb-4">
                   Connect your wallet to get started
                 </p>
-                <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700 transition-colors" />
               </div>
             )}
           </CardContent>
@@ -127,4 +122,3 @@ export default function Dashboard() {
     </div>
   );
 }
-
