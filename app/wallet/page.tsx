@@ -42,7 +42,7 @@ export default function Home() {
       if (sigResult) {
         alert("Airdrop was confirmed!"); // successful
       }
-    } catch (err) {
+    } catch {
       alert("You are Rate limited for Airdrop"); // Too many requests
     }
   };

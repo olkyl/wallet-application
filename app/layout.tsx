@@ -1,10 +1,10 @@
 // Root layout for Next.js app
 import AppWalletProvider from "../components/ui/AppWalletProvider";
 
-import { Geist, Geist_Mono } from "next/font/google"; // custom font
+/* import { Geist, Geist_Mono } from "next/font/google"; // custom font */
 import "./globals.css";
 
-// configure the font for global use
+/* // configure the font for global use
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,7 +14,7 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+}); */
  
 export default function RootLayout({
   children,
